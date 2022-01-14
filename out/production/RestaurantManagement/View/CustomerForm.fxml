@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Context4" prefHeight="613.0" prefWidth="1078.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <AnchorPane prefHeight="58.0" prefWidth="1078.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="Customer Form" textFill="#9e5858">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="36.0" text="Add to Customer Detail" textFill="#898787" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="57.0" prefHeight="556.0" prefWidth="207.0" style="-fx-background-color: #5d3232;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="207.0" onAction="#OpenCustomerSaveFormOnAction" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #7f8c8d;" text="Customer Save Form" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="247.0" onAction="#OpenCustomerUpdateFormOnAction" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #7f8c8d;" text="Customer Update From" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="289.0" onAction="#OpenCustomerSearchFormOnAction" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #7f8c8d;" text="Customer Search Form" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="332.0" onAction="#OpenCustomerDeleteFormOnAction" prefHeight="31.0" prefWidth="174.0" style="-fx-background-color: #7f8c8d;" text="Customer Delete Form" />
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="376.0" onAction="#OpenAllCustomerFormOnAction" prefHeight="25.0" prefWidth="174.0" style="-fx-background-color: #7f8c8d;" text="View All Customer Form" />
+            <ImageView fitHeight="152.0" fitWidth="148.0" layoutX="30.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logo1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="174.0" layoutX="17.0" layoutY="414.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/D6.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="loadContext2" layoutX="207.0" layoutY="57.0" prefHeight="556.0" prefWidth="871.0" style="-fx-background-color: #2d3436;" />
+   </children>
+</AnchorPane>

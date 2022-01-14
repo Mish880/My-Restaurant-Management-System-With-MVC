@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="871.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerSearchFromController">
+   <children>
+      <TextField fx:id="txtCustomerId" layoutX="34.0" layoutY="115.0" onKeyReleased="#CustID_keyPress" prefHeight="25.0" prefWidth="614.0" promptText="Customer Id" />
+      <TextField fx:id="txtCustomerName" layoutX="34.0" layoutY="200.0" prefHeight="25.0" prefWidth="614.0" promptText="Customer  Name" />
+      <TextField fx:id="txtCustomerAddress" layoutX="33.0" layoutY="288.0" prefHeight="25.0" prefWidth="614.0" promptText="Customer Address" />
+      <TextField fx:id="txtCustomerSalary" layoutX="34.0" layoutY="369.0" prefHeight="25.0" prefWidth="614.0" promptText="Customer Salary" />
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="33.0" layoutY="431.0" onAction="#SearchCustomerOnAction" prefHeight="31.0" prefWidth="424.0" style="-fx-background-color: #7f8c8d;" text="Search Customer ">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="34.0" layoutY="81.0" text="Customer Id :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="164.0" text="Customer Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="253.0" text="Customer Address :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="334.0" text="Customer Salary :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="8.0" text="Search Customer" textFill="#9e5858">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="38.0" text="Search Customer Details" textFill="#898787" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

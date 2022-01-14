@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="871.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDeleteFromController">
+   <children>
+      <TextField fx:id="txtId" alignment="TOP_LEFT" layoutX="29.0" layoutY="174.0" onAction="#SearchCustomer" onKeyReleased="#CustID_keyPress" prefHeight="144.0" prefWidth="614.0" promptText="Enter Customer Id">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <JFXButton fx:id="btnDelete" layoutX="29.0" layoutY="374.0" onAction="#DeleteCustomerOnAction" prefHeight="31.0" prefWidth="424.0" style="-fx-background-color: #7f8c8d;" text="Delete Customer">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="29.0" layoutY="130.0" text="Customer Id :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="21.0" layoutY="15.0" text="Delete Customer" textFill="#9e5858">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="38.0" text="Delete Customer Detail" textFill="#898787" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

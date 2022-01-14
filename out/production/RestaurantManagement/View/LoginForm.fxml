@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Context1" prefHeight="432.0" prefWidth="536.0" style="-fx-background-color: #636e72;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+   <children>
+      <Label layoutX="297.0" layoutY="45.0" text="Login here">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.9380952380952381">
+               <stops>
+                  <Stop color="#0bd7c9" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Text layoutX="236.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name  :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="236.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password    : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="337.0" layoutY="132.0" prefHeight="25.0" prefWidth="169.0" />
+      <PasswordField fx:id="password" layoutX="337.0" layoutY="186.0" prefHeight="25.0" prefWidth="169.0" />
+      <JFXButton buttonType="RAISED" layoutX="364.0" layoutY="250.0" onAction="#OpenEmployeeFromOnAction" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #278681;" text="Login" />
+      <AnchorPane layoutX="-1.0" layoutY="-2.0" prefHeight="435.0" prefWidth="227.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="7.0" layoutY="411.0" text="version 1.0.0." textFill="#a1a1a1">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="7.0" layoutY="33.0" text=" FOOD PARADISE RESTURANT" textFill="#278681">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="54.0" text="Colombo SriLanka" textFill="#868282">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="180.0" fitWidth="183.0" layoutX="23.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="180.0" layoutX="33.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/D2.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

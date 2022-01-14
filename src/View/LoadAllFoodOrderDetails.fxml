@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="354.0" prefWidth="517.0" style="-fx-background-color: #636e72;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoadAllFoodOrderDetailsController">
+   <children>
+      <Label layoutX="24.0" layoutY="26.0" text="Food Order Details">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblFoodOrderDetails" layoutX="25.0" layoutY="74.0" prefHeight="256.0" prefWidth="468.0">
+        <columns>
+          <TableColumn fx:id="colFoodItemCode" prefWidth="148.0" text="Food Item Code" />
+          <TableColumn fx:id="colOrderId" prefWidth="112.0" text="Order Id" />
+            <TableColumn fx:id="colQTY" prefWidth="84.0" text="QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="123.0" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

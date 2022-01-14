@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="556.0" prefWidth="871.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SaveCustomerFormController">
+   <children>
+      <TextField fx:id="txtId" layoutX="26.0" layoutY="151.0" onKeyReleased="#CustID_keyPress" prefHeight="25.0" prefWidth="614.0" promptText="Customer Id" />
+      <TextField fx:id="txtName" layoutX="26.0" layoutY="210.0" onKeyReleased="#Cust_Name" prefHeight="25.0" prefWidth="614.0" promptText="Customer Name" />
+      <TextField fx:id="txtAddress" layoutX="26.0" layoutY="284.0" onKeyReleased="#Cust_Address" prefHeight="25.0" prefWidth="614.0" promptText="Customer Address" />
+      <TextField fx:id="txtSalary" layoutX="26.0" layoutY="350.0" onKeyReleased="#Cust_Salary" prefHeight="25.0" prefWidth="614.0" promptText="Customer Salary" />
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="26.0" layoutY="412.0" onAction="#SaveCustomerOnAction" prefHeight="31.0" prefWidth="424.0" style="-fx-background-color: #7f8c8d;" text="Save ">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label layoutX="26.0" layoutY="116.0" text="Customer Id :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="184.0" text="Customer Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="253.0" text="Customer Address :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="323.0" text="Customer Salary :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="60.0" prefWidth="871.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="14.0" layoutY="15.0" text="Save Customer" textFill="#9e5858">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="38.0" text="Save Customer Details" textFill="#898787" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

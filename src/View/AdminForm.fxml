@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminloadcontext6" prefHeight="691.0" prefWidth="1356.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <AnchorPane prefHeight="693.0" prefWidth="280.0" style="-fx-background-color: #34495e;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="16.0" layoutY="227.0" onAction="#OpenFoodOrderDetailsOnaction" prefHeight="29.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Food Order Details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="274.0" onAction="#OpenRoomOrderDetailsOnaction" prefHeight="29.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Room Order Details">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="17.0" layoutY="316.0" onAction="#OpenMonthlyPaymentDetails" prefHeight="29.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Monthly Payment Details ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="17.0" layoutY="655.0" text="Version 1.0.0." textFill="#a8a5a5">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label layoutX="53.0" layoutY="36.0" text="Admin  Form">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.5047619047619047">
+                     <stops>
+                        <Stop color="#299197" />
+                        <Stop color="#0b2220" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXButton fx:id="btnrentaljasper" buttonType="RAISED" layoutX="17.0" layoutY="358.0" onMouseClicked="#Jasperevent" prefHeight="29.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Foods order Detail Rental Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnRoomjasper" buttonType="RAISED" layoutX="15.0" layoutY="401.0" onMouseClicked="#RoomJasperEvent" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Rooms order Detail Rental Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnforder" buttonType="RAISED" layoutX="17.0" layoutY="447.0" onMouseClicked="#fdOrderrentalreport" prefHeight="30.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="food order Rental Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnrorder" buttonType="RAISED" layoutX="17.0" layoutY="489.0" onMouseClicked="#rdorderrentalreport" prefHeight="31.0" prefWidth="249.0" style="-fx-background-color: #95a5a6;" text="Room order Rental Report">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="140.0" fitWidth="143.0" layoutX="68.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="107.0" fitWidth="172.0" layoutX="79.0" layoutY="534.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logo2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="280.0" prefHeight="693.0" prefWidth="1076.0" style="-fx-background-color: #636e72;">
+         <children>
+            <AnchorPane prefHeight="76.0" prefWidth="1076.0" style="-fx-background-color: #2d3436;">
+               <children>
+                  <Label layoutX="446.0" layoutY="10.0" text=" FOOD PARADISE  RESTAURENT " textFill="#278681">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="554.0" layoutY="41.0" text="Colombo SriLanka" textFill="#868282">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="970.0" layoutY="26.0" onAction="#openLoginFormOnAction" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #278681;" text="Log out" />
+                  <ImageView fitHeight="76.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/D3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="76.0" fitWidth="157.0" layoutX="122.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/D2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="77.0" fitWidth="145.0" layoutX="244.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/D5.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane fx:id="AdminContext1" layoutY="76.0" prefHeight="354.0" prefWidth="517.0" style="-fx-background-color: #636e72;" />
+            <AnchorPane fx:id="AdminContext2" layoutX="517.0" layoutY="76.0" prefHeight="354.0" prefWidth="559.0" style="-fx-background-color: #636e72;" />
+            <AnchorPane fx:id="AdminContext3" layoutY="430.0" prefHeight="263.0" prefWidth="517.0" style="-fx-background-color: #636e72;" />
+            <ImageView fitHeight="254.0" fitWidth="458.0" layoutX="571.0" layoutY="435.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/D7.jpg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

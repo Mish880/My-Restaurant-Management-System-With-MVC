@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cheffcontext" prefHeight="691.0" prefWidth="1356.0" style="-fx-background-color: #636e72;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CheffFormController">
+   <children>
+      <TableView fx:id="tblFoodOrderDetails" layoutX="56.0" layoutY="103.0" prefHeight="522.0" prefWidth="1244.0">
+        <columns>
+          <TableColumn fx:id="colFoodItemCode" prefWidth="398.9999694824219" text="Food Item Code" />
+          <TableColumn fx:id="colOrderId" prefWidth="340.0" text="Order Id" />
+            <TableColumn fx:id="colQTY" prefWidth="240.0" text="QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="317.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="656.0" text="Version 1.0.0.">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <AnchorPane prefHeight="78.0" prefWidth="1358.0" style="-fx-background-color: #2d3436;">
+         <children>
+            <Label layoutX="517.0" layoutY="14.0" text="FOOD PARADISE RESTAURENT " textFill="#278681">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="617.0" layoutY="46.0" text="Colombo Sri Lanka" textFill="#868282">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="1234.0" layoutY="27.0" onAction="#openLoginFormOnAction" prefHeight="25.0" prefWidth="71.0" style="-fx-background-color: #278681;" text="Logout" />
+            <ImageView fitHeight="62.0" fitWidth="71.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

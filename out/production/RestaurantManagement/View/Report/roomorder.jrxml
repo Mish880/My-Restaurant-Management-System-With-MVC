@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="roomorder" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="984bd422-5a88-4a44-8bf1-8a521f5194b6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JDBC Connection"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from rorder]]>
+	</queryString>
+	<field name="OrderId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="OrderId"/>
+		<property name="com.jaspersoft.studio.field.label" value="OrderId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rorder"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cId" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cId"/>
+		<property name="com.jaspersoft.studio.field.label" value="cId"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rorder"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="orderDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="orderDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="orderDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rorder"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="time"/>
+		<property name="com.jaspersoft.studio.field.label" value="time"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rorder"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cost" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="cost"/>
+		<property name="com.jaspersoft.studio.field.label" value="cost"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="rorder"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="94" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="30" forecolor="rgba(149, 171, 155, 0.7764706)" uuid="c01020cf-dc33-4486-b23d-1b64a33d0510"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SQL Report of Room Order Form]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="555" height="30" forecolor="#46BD5E" uuid="f5e524d8-5a18-4186-b761-568fe730880b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FOOD PARADISE RESTAURANT Colombo Sri Lanka]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="190" y="60" width="100" height="20" uuid="debc0d7f-4c28-40a7-ac31-90b96e9466c8"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="320" y="60" width="100" height="20" uuid="9a383783-3e5d-466f-a114-f5d731e3c862"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="e1c6c6e8-f1a4-4bd6-80ab-6baf779a0e87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1250e19f-d1fc-4e47-9e68-c19230b62681"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[OrderId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="c32c61b3-3001-4a04-8a89-d5812bf6cd87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f0393fe-0536-49f6-accc-e0a46e65a135"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[cId]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="06e9cc5a-5a5a-4db7-8794-ee04c19c9b3a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2fa6bebc-98d5-4ba5-99d2-bf4dd18b935e"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[orderDate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="05bf5a0c-6af1-4325-bcf6-49f601f7f915">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5fcf0b9-f4f9-4af9-87bf-9dbddaadb326"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[time]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="62474ad8-6ad1-459b-9bd8-3f2983195c8d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d2eb546-3a07-4730-8aad-a1bc0f85afca"/>
+				</reportElement>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[cost]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="003bbd2a-e311-4881-9e40-e1998efd6d19">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1250e19f-d1fc-4e47-9e68-c19230b62681"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OrderId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="f487a71b-c509-4bc8-93e6-d0531f768825">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3f0393fe-0536-49f6-accc-e0a46e65a135"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="15e5977a-8473-43f5-9784-88ed3f1b7a30">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2fa6bebc-98d5-4ba5-99d2-bf4dd18b935e"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{orderDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="a6e251e0-231f-4319-815f-3e1c572d9fa3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5fcf0b9-f4f9-4af9-87bf-9dbddaadb326"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="8fa63e76-0c51-4c1f-89e4-566d4dbbc0d0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d2eb546-3a07-4730-8aad-a1bc0f85afca"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cost}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="10" width="555" height="30" forecolor="#209653" uuid="8481ee0e-4a7a-4d0f-a71f-6f7e45569512"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[FOOD PARADISE RESTAURANT Colombo Sri Lanka....]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

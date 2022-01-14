@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="613.0" prefWidth="1078.0" style="-fx-background-color: #95afc0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomDetailsController">
+   <children>
+      <JFXTextField fx:id="txtId" layoutX="56.0" layoutY="83.0" onKeyReleased="#RoomId_keyPress" prefHeight="25.0" prefWidth="274.0" promptText="RoomCode" />
+      <JFXTextField fx:id="txtDescription" layoutX="368.0" layoutY="83.0" onKeyReleased="#Room_Name" prefHeight="25.0" prefWidth="305.0" promptText="RoomType" />
+      <JFXTextField fx:id="txtQty" layoutX="762.0" layoutY="83.0" onKeyReleased="#Room_QtyPress" prefHeight="25.0" prefWidth="226.0" promptText="Qty" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="56.0" layoutY="130.0" onKeyReleased="#Room_SalaryPress" prefHeight="25.0" prefWidth="255.0" promptText="UnitPrice" />
+      <TableView fx:id="tblRoom" layoutX="31.0" layoutY="183.0" prefHeight="403.0" prefWidth="1019.0">
+        <columns>
+          <TableColumn fx:id="colRoomId" prefWidth="264.0" text="Room Code" />
+          <TableColumn fx:id="colRoomtype" prefWidth="295.0" text="Room Type" />
+            <TableColumn fx:id="colqty" prefWidth="253.0" text="Qty" />
+            <TableColumn fx:id="colUnitPrice" minWidth="0.0" prefWidth="206.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnaddroom" layoutX="754.0" layoutY="142.0" onAction="#SaveRoomOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #7f8c8d;" text="Add" />
+      <JFXButton fx:id="btnremoveroom" layoutX="887.0" layoutY="142.0" onAction="#DeleteOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #7f8c8d;" text="Remove" />
+      <JFXButton fx:id="btnupdateroom" layoutX="624.0" layoutY="142.0" onAction="#UpdateRoomOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #7f8c8d;" text="Update" />
+      <AnchorPane prefHeight="60.0" prefWidth="1078.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="Room Details" textFill="#9e5858">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="38.0" text="Add New Room Details" textFill="#898787" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

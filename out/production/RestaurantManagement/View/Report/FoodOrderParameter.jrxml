@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FoodOrderParameter" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec059fb4-aad2-48d3-b83b-cc2bbe446e04">
+	<parameter name="qty" class="java.lang.String"/>
+	<parameter name="price" class="java.lang.String"/>
+	<parameter name="description" class="java.lang.String"/>
+	<parameter name="OrderId" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="24" width="555" height="26" forecolor="#179C43" uuid="ace8f638-1dc4-4aa3-a405-ba5ff44503c6"/>
+				<textElement textAlignment="Center">
+					<font size="17"/>
+				</textElement>
+				<text><![CDATA[FOOD PARADISE RESTAURANT Colombo Sri Lanka]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="330" y="60" width="100" height="20" uuid="3300e542-d45c-4123-bb2d-642015192221"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="130" y="60" width="100" height="20" uuid="666b1220-6c7b-4bfd-89d7-5e9a1e32b8f3"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="555" height="30" forecolor="#5C6063" uuid="f7f3b80e-c694-4d48-852b-4572b28e300e"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Foods Payment Bill]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="157" splitType="Stretch">
+			<textField>
+				<reportElement x="280" y="30" width="230" height="20" uuid="a5d349a4-a0de-4525-bcf2-9f5287e61ce3"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{qty}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="100" width="230" height="20" uuid="b61ead3e-2c53-4b98-bf76-225c65d8e1b6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="0" width="100" height="20" uuid="28ab1e0c-f1d0-49c7-9b91-0e2358bcd75b"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Food Type :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="30" width="70" height="20" uuid="fc124429-1905-45d6-a7f8-a9c9082b9f8e"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Qty        : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="100" width="80" height="30" uuid="fc9fca97-da9e-4160-b1c0-9ffa5e7b365a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unit Price :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="-2" width="100" height="25" uuid="386985af-7c1a-48bd-be81-4c612a71b92f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="280" y="64" width="235" height="23" uuid="d9792586-50be-4830-b7df-3a63874a15d6"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{OrderId}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="160" y="60" width="100" height="30" uuid="062ba78d-2b95-4d59-b19e-7542b933433a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Id :]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
